@@ -30,6 +30,7 @@ __Possible calls:__
 ```
 
 4. PUT a party (modify using json format)
+	- http://localhost:8080/party/17
 
 ```
 {
