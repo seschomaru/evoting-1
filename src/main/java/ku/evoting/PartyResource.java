@@ -36,7 +36,9 @@ public class PartyResource {
         return repository.findById(id)
                 .map(record -> {
                     record.setName(party.getName());
-                    record.setCount(party.getCount());
+                    record.setVoteCount(party.getVoteCount());
+                    record.setElectedMemberCount(party.getElectedMemberCount());
+                    record.setPartylistCount(party.getPartylistCount());
                     Party updated = repository.save(record);
                     return ResponseEntity.ok().body(updated);
                 }).orElse(ResponseEntity.notFound().build());

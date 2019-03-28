@@ -13,7 +13,9 @@ public class Party {
     private int id;
 
     private String name;
-    private int count;
+    private int voteCount;
+    private int electedMemberCount;
+    private int partylistCount;
 
     public int getId() {
         return id;
@@ -31,19 +33,38 @@ public class Party {
         this.name = name;
     }
 
-    public int getCount() {
-        return count;
+    public int getVoteCount() {
+        return voteCount;
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setVoteCount(int voteCount) {
+        this.voteCount = voteCount;
+    }
+
+    public int getPartylistCount() {
+        return partylistCount;
+    }
+
+    public void setPartylistCount(int partylistCount) {
+        this.partylistCount = partylistCount;
+    }
+
+    public int getElectedMemberCount() {
+        return electedMemberCount;
+    }
+
+    public void setElectedMemberCount(int electedMemberCount) {
+        this.electedMemberCount = electedMemberCount;
     }
 
     @Override
     public String toString() {
         return "Party{" +
-                "name='" + name + '\'' +
-                ", count=" + count +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", voteCount=" + voteCount +
+                ", partylistCount=" + partylistCount +
+                ", electedMemberCount=" + electedMemberCount +
                 '}';
     }
 }
