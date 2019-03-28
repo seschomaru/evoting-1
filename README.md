@@ -22,17 +22,17 @@ __Possible calls:__
 3. POST a party (create using json format)
 	- http://localhost:8080/party
 
-{
+```{
     "name": "ประชาภิวัฒน์",
     "voteCount": 63602
-}
+}```
 
 4. PUT a party (modify using json format)
 
-{
+```{
     "name": "ประชาภิวัฒน์",
     "voteCount": 69417
-}
+}```
 
 5. DELETE a party
 	- http://localhost:8080/party/17
