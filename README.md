@@ -11,16 +11,16 @@ __To compile and run with Maven:__
 __Possible calls:__
 
 1. GET all parties
-	- http://localhost:8080/party
+	- http://localhost:8090/party
 
 2. GET specific party with id
-	- http://localhost:8080/party/{pid} เช่น
-	- http://localhost:8080/party/1
-	- http://localhost:8080/party/2
-	- http://localhost:8080/party/3
+	- http://localhost:8090/party/{pid} เช่น
+	- http://localhost:8090/party/1
+	- http://localhost:8090/party/2
+	- http://localhost:8090/party/3
 
 3. POST a party (create using json format)
-	- http://localhost:8080/party
+	- http://localhost:8090/party
 
 ```
 {
@@ -30,7 +30,7 @@ __Possible calls:__
 ```
 
 4. PUT a party (modify using json format)
-	- http://localhost:8080/party/17
+	- http://localhost:8090/party/17
 
 ```
 {
@@ -40,4 +40,4 @@ __Possible calls:__
 ```
 
 5. DELETE a party
-	- http://localhost:8080/party/17
+	- http://localhost:8090/party/17
