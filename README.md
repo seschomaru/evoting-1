@@ -41,3 +41,11 @@ __Possible calls:__
 
 5. DELETE a party
 	- http://localhost:8090/party/17
+
+
+
+__Jenkins:__
+
+  * Install mvn on machine
+  * Install `Maven Integration plugin`
+  * Set up JDK and Maven in Global Tool Configuration
